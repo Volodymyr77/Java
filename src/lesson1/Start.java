@@ -94,5 +94,41 @@ public class Start {
 //            User user = users[i];
 //            usersWeight = usersWeight + users[i].weight;
 //        }
-    }
+
+       Car car1 = new Car(80, 1500, "seat", 3999, "red", 4, true);
+        Car car2 = new Car(50, 1400, "fiat", 2300, "green", 4, true);
+        Car car3 = new Car(70, 1700, "ford", 1500, "blue", 4, false);
+        Car car4 = new Car(90, 1800, "dodge", 1600, "red", 4, true);
+        Car car5 = new Car(60, 1500, "ford", 3000, "pink", 4, false);
+        Car car6 = new Car(60, 1400, "pego", 2500, "black", 4, true);
+        Car car7 = new Car(80, 1500, "seat", 1500, "red", 4, true);
+        Car car8 = new Car(70, 1300, "fiat", 2760, "blue", 4, false);
+        Car car9 = new Car(80, 1200, "full", 1299, "blue", 4, true);
+        Car car10 = new Car(100, 1800, "seat", 2400, "red", 4, true);
+
+        Car[] cars = {car1,car2,car3,car4,car5,car6,car7,car8,car9,car10};
+
+        int sumVolume = 0;
+        int sumPower = 0;
+
+        for (int i = 0; i < cars.length; i++) {
+
+            sumVolume = sumVolume + cars[i].engVolume;
+            sumPower = sumPower + cars[i].power;
+        }
+        System.out.println(sumVolume);
+        System.out.println(sumPower);
+
+        int number1 = 315;
+        int last1 = number1%10 ;
+        int div1 = number1/10;
+        int last2 = div1%10 ;
+        int div2 = div1/10;
+        System.out.println(last1);
+        System.out.println(div1);
+        System.out.println(last2);
+        System.out.println(div2);
+        System.out.println(return "last1" + "last2" + "div2");
+
+}
 }
