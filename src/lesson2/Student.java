@@ -8,4 +8,7 @@ public class Student extends Person{
         super.saySmth(smth);
 
     }
+    public void session() {
+        System.out.println("i'm crying");
+    }
 }

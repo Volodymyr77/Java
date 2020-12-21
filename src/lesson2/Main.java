@@ -8,7 +8,15 @@ public class Main {
         Person p = new Person();
         Student s = new Student();
 
-        s.saySmth("bla");
+//        s.saySmth("bla");
+//        System.out.println(p.combintIdAndName());
+
+
+        Person p1 = new Student();
+        p1.saySmth("blabla");
+
+
+
 
     }
 
