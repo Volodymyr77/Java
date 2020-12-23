@@ -2,18 +2,22 @@ package lesson9;
 
 public class Main {
 
-    public static void main(String[] args) {
-        MyThread myThread = new MyThread("Full-thread-1", "Roman");
-        myThread.start();
-
+//    public static void main(String[] args) {
+////        MyThread myThread = new MyThread("Full-thread-1", "Roman");
+////        myThread.start();
+//
 //        Runnable runnable = () -> {
 //            for (int i = 0; i < 5; i++) {
 //                System.out.println(Thread.currentThread().getName() + ":" + i);
 //            }
 //        };
-//        Thread thread = new Thread(new MyThread(), "My-Tread-1");
+//        Thread thread = new Thread(runnable, "My-Tread-1");
 //        thread.start();
-    }
+//        for (int i = 0; i < 5; i++) {
+//            System.out.println(Thread.currentThread().getName() + ":" + i);
+//        }
+//
+//    }
 
 //            for (int i= 0; i<5; i++) {
 //                System.out.println(Thread.currentThread().getName() + ":" + i);
@@ -38,4 +42,12 @@ public class Main {
 //            System.out.println("another flag");
 //        }
 //    })
+
+    BankAccount bankAccount = new BankAccount(50);
+    CreditCard creditCard = new CreditCard((bankAccount);
+    CardOwner husband = new CardOwner(creditCard1);
+    CardOwner wife = new CardOwner(creditCard2);
+
+    Thread husbandTread = new Thread(husband, "Husband")
+    )
 }
