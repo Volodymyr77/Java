@@ -16,6 +16,12 @@ public class Square extends GeometricFigure{
         this.a = a;
     }
 
+
+    // static polymorphysm
+    public void setA(String a) {
+        this.a = Integer.parseInt(a);
+    }
+
     @Override
     public int calculatePerimeter() {
         return a * 4;

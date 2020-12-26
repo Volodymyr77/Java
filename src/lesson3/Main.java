@@ -12,8 +12,6 @@ public class Main {
         Square square1 = new Square(3);
         Square square2 = new Square(4);
 
-//
-//
 //        Triangle[] triangles = new Triangle[] {triangle1, triangle2};
 //        Square[] squares = new Square[] {square1, square2};
 //
@@ -26,8 +24,7 @@ public class Main {
 //        for (Square square : squares) {
 //            ss += square.calculateSquare();
 //        }
-//
-//        System.out.println(ts + ss);
+////        System.out.println(ts + ss);
 
         int totalSquare = 0;
         List<GeometricFigure> figures = new ArrayList<>();
@@ -36,12 +33,10 @@ public class Main {
         figures.add(triangle2);
         figures.add(square2);
 
+
         for (GeometricFigure figure : figures) {
             totalSquare += figure.calculateSquare();
         }
-
         System.out.println("Total square" + totalSquare);
-
     }
-
 }

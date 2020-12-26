@@ -1,11 +1,5 @@
 package lesson3;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-
-
-
 
 public class Triangle extends GeometricFigure {
 
@@ -50,7 +44,8 @@ public class Triangle extends GeometricFigure {
 
     @Override
     public int calculateSquare() {
-        return 0;
+
+        return a * a;
     }
 
     // why do not work
