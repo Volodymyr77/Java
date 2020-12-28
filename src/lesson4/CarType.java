@@ -1,10 +1,29 @@
 package lesson4;
 
-public enum CarType implements Paintable {
+import lesson3.Printable;
+
+public enum CarType implements Printable  {
 
 
 // publik static final CarType SEDAN = new CarType("седан")
-        SEDAN("седан"), SUV("кросовер"), HATCHBACK("хечбек");
+        SEDAN("седан") {
+    @Override
+    public void paint() {
+        System.out.println(this.getUkrainianTranslation() + "фарбуємо в червноний");
+    }
+}, SUV("кросовер") {
+        @Override
+        public void paint() {
+            System.out.println(this.getUkrainianTranslation() + "фарбуємо в чиній");
+        }
+    },
+
+    HATCHBACK("хечбек") {
+        @Override
+        public void paint() {
+            super.paint();
+        }
+    };
 
 
 
@@ -27,4 +46,10 @@ public enum CarType implements Paintable {
         public String toString() {
                 return super.toString();
         }
+
+    @Override
+    public void paint() {
+        System.out.println("painted");
+
+    }
 }
