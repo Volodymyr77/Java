@@ -19,8 +19,11 @@ public class Main {
         Car car1 = new Car(car.getEngine(), "sad", 30000, CarType.SEDAN);
 
 
-        car.getEngine().setCylinderNumber(5);
-        System.out.println(car);
-        System.out.println(car1);
+//        car.getEngine().setCylinderNumber(car.getEngine().getCylinderNumber()+1);
+//        System.out.println(car);
+//        System.out.println(car1);
+
+        car.getEngine().startEngine();
+        car.startCar();
     }
 }
