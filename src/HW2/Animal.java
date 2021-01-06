@@ -12,7 +12,7 @@ public class Animal {
         this.location = location;
     }
 
-    public void makeNoise (int a) {
+    public void makeNoise (String a) {
         System.out.println("grroul");
     }
 

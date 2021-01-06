@@ -15,7 +15,13 @@ public class Main {
 //    Cat cat2 = new Cat();
         Horse horse1 = new Horse();
         Horse horse2 = new Horse();
+
+        System.out.println("Animal");
+        System.out.println("-----______------");
+
+        dog1.makeNoise("gaurr");
     }
+
 
 //    Array[] arrays = new Array[] {dog1, dog2, cat1, cat2, horse1, horse2};
 }
