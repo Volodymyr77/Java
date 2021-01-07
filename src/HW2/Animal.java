@@ -28,10 +28,10 @@ public  class Animal {
 
     public void   animalSleep(boolean isSleepWell) {
         if (isSleepWell) {
-           System.out.println(this + "hrrrrrrrrrr....");
-           return;
-    }
+            System.out.println(this + "hrrrrrrrrrr....");
+            return;
+        }
 
         System.out.println(this + "sleeps bad");
-
+    }
 }

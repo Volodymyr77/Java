@@ -10,8 +10,8 @@ public class Main {
 
         ArrayList<Animal> animals = new ArrayList<>();
 
-        Dog dog1 = new Dog("meat", "home");
-        Dog dog2 = new Dog("milk", "ferm");
+        Dog dog1 = new Dog(12, 7);
+        Dog dog2 = new Dog(15, 3);
 //    Cat cat1 = new Cat();
 //    Cat cat2 = new Cat();
         Horse horse1 = new Horse();
@@ -21,8 +21,8 @@ public class Main {
         System.out.println("-----______------");
 
         dog1.makeNoise();
-        dog2.animalEat("a");
-        dog1.animalSleep("ahhh");
+        dog2.animalEat();
+        dog1.animalSleep(true);
     }
 
 
