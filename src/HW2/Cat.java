@@ -1,8 +1,15 @@
-//package HW2;
+package HW2;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 //
-//public class Cat extends Animal {
+@AllArgsConstructor
+@Data
+
+public class Cat extends Animal {
 //
-////    boolean mauseCatch;
-////    int weight;
-//
-//}
+
+
+
+}

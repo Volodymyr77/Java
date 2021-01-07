@@ -1,13 +1,14 @@
 package HW2;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
 
 
-        Animal animal = new Animal("leaves", "park");
+        ArrayList<Animal> animals = new ArrayList<>();
 
         Dog dog1 = new Dog("meat", "home");
         Dog dog2 = new Dog("milk", "ferm");
@@ -19,7 +20,9 @@ public class Main {
         System.out.println("Animal");
         System.out.println("-----______------");
 
-        dog1.makeNoise("gaurr");
+        dog1.makeNoise();
+        dog2.animalEat("a");
+        dog1.animalSleep("ahhh");
     }
 
 

@@ -1,29 +1,37 @@
 package HW2;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.lang.reflect.Method;
 
-public class Animal {
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+
+public  class Animal {
 
     private  String food;
     private String location;
 
-    public Animal(String food, String location) {
-        this.food = food;
-        this.location = location;
-    }
-
-    public void makeNoise (String a) {
-        System.out.println("grroul");
-    }
-
-    public static void animalEat(String[] args) {
-        System.out.println("hrum-hrum");
-    }
-
-    public static void animalSleep(String[] args) {
-        System.out.println("hrrrrrrrrrr....");
+       public void makeNoise () {
+           System.out.println(this + "make noise");
     }
 
 
+
+    public  void animalEat() {
+
+           System.out.println("hrum-hrum" + getFood());
+    }
+
+    public void   animalSleep(boolean isSleepWell) {
+        if (isSleepWell) {
+           System.out.println(this + "hrrrrrrrrrr....");
+           return;
+    }
+
+        System.out.println(this + "sleeps bad");
 
 }
