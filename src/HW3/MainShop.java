@@ -20,7 +20,7 @@ public class MainShop {
           new Book("13",2913)
         };
         for (Book book : books) {
-             Book.printBooks();
+             if (book.year > 2000) System.out.println(book);
 
         }
 

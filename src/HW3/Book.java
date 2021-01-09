@@ -14,6 +14,8 @@ import java.util.List;
 
 public class Book extends magOfBook implements Printable {
 
+    public int year;
+
     public Book(String name, int year) {
         super(name, year);
     }
