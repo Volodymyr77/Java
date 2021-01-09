@@ -14,9 +14,20 @@ public class MainShop {
 
         List<Printable> catalogOfBooks = new ArrayList<>();
 
+        Book[] books = {
+          new Book("1984", 1965),
+          new Book("482", 1995),
+          new Book("13",2913)
+        };
+        for (Book book : books) {
+             Book.printBooks();
+
+        }
+
+
         for (int i = 0; i < 4; i++) {
-            catalogOfBooks.add(new Book("bookName" + (i+1), 2000+i));
-            catalogOfBooks.add(new Magazine("magazineName" + (i + 1),2010 +i):
+            catalogOfBooks.add(new Book("bookName" + (i+1), 2000 + i));
+            catalogOfBooks.add(new Magazine("magazineName" + (i + 1),2010 +i));
         }
 
         for (Printable catalogOfBook : catalogOfBooks) {
