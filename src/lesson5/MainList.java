@@ -18,14 +18,28 @@ public class MainList {
 //        List  = Arrays.asList(ar);
 //        System.out.println(strings);
 
-    String s1 = "Hello";
-    String s2 = "Hello";
+//    String s1 = "Hello";
+//    String s2 = "Hello";
+//
+//        Person p1 = new Person(1, "Naras");
+//        Person p2 = new Person(2, "Naras");
+//
+//        System.out.print(s1.equals(s2));
+//        System.out.println(p1.equals(p2));
 
-        Person p1 = new Person(1, "Naras");
-        Person p2 = new Person(2, "Neral");
+        List<Person> list = new ArrayList<>();
+        list.add(new Person(1,"Taras"));
+        list.add(new Person(2,"Ihor"));
+        list.add(new Person(3,"Hanna"));
 
-        System.out.println(s1.equals(s2));
-        System.out.println(p1.equals(p2));
+        for (Person person : list) {
+            if (person.getName().startsWith("I")) {
+                System.out.println(person);
+            }
+
+        }
+
+
 
     }
 }

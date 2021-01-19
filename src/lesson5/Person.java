@@ -2,8 +2,10 @@ package lesson5;
 
 import lombok.Data;
 
+import java.util.Objects;
 
-    @Data
+
+@Data
     public  class Person {
 
         private int id;
@@ -34,7 +36,23 @@ import lombok.Data;
             this.name = name;
         }
 
-        @Override
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Person person = (Person) o;
+        return id == person.id &&
+                Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
+
+    @Override
         public String toString() {
             return "Person{" +
                     "id=" + id +
