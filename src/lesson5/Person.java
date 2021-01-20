@@ -49,7 +49,9 @@ import java.util.Objects;
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name);
+
+        System.out.println("HachCode");
+            return Objects.hash(id, name);
     }
 
     @Override
